@@ -1,0 +1,77 @@
+.select-wrapper
+    .default-select
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: .5px
+
+        &__control
+            background-color: $color-background-base
+            border-color: transparent
+            border-radius: $radius-common
+
+            &:hover
+                border-color: $color-background-base-12
+                background-color: $color-background-base-12
+
+            &--is-focused
+                border-color: $color-background-base-12
+                background-color: $color-background-base-12
+                outline: none
+                box-shadow: none
+
+            +media-breakpoint-up(md)
+                min-height: 43px
+
+        &__single-value
+            letter-spacing: .5px
+            color: $color-text-base
+            overflow: unset
+
+        &__multi-value
+            height: 28px
+            border-radius: 8px
+            background-color: $color-background-base
+
+            &__label
+                line-height: 21px
+                color: $color-just-white
+
+            &__remove
+                color: $color-text-base
+                border-radius: 0 6px 6px 0
+                transition: .3s all
+
+                &:hover
+                    background-color: $color-new-peach
+                    color: $color-primary-lighter
+
+        &__indicator-separator
+            display: none
+
+        &__dropdown-indicator
+            svg
+                color: $color-new-base-green
+
+        &__menu
+            color: $color-text-base
+            background-color: $color-primary-lighter
+            border: 1px solid $color-background-base-12
+            border-radius: $radius-common
+            overflow: hidden
+
+        &__menu-list
+            padding-top: unset
+            padding-bottom: unset
+
+        &__option
+            &--is-focused
+                background-color: $color-background-base-12
+
+            &--is-selected
+                background-color: $color-new-base-blue
+
+        +media-breakpoint-up(md)
+            width: 100%
+            flex-shrink: 0
+            font-size: 18px
+    

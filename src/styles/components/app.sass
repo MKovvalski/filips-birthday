@@ -1,0 +1,191 @@
+.app
+    width: 100vw
+    height: 100vh
+    background-color: #ffd480
+    position: relative
+    overflow: hidden
+    font-family: "Helvetica Neue"
+
+$gate-color: #333333
+$gate-color-2: #4d4d4d
+
+.gate-one-wrapper
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 2
+    display: flex
+    background-color: transparent
+    pointer-events: none
+
+    .gate-left
+        width: 50vw
+        height: 100vh
+        background-color: $gate-color
+        flex-shrink: 0
+        transition: all 2s
+        position: relative
+
+    .gate-right
+        width: 50vw
+        height: 100vh
+        background-color: $gate-color
+        flex-shrink: 0
+        transition: all 2s
+        z-index: 5
+
+    .move-left
+        transform: translateX(-51vw)
+
+    .move-right
+        transform: translateX(50vw)
+
+.gate-two-wrapper
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 1
+    background-color: transparent
+    pointer-events: none
+
+    .gate-up
+        width: 100vw
+        height: 50vh
+        background-color: $gate-color-2
+        flex-shrink: 0
+        transition: all 1s
+        position: relative
+
+    .gate-down
+        width: 100vw
+        height: 50vh
+        background-color: $gate-color-2
+        flex-shrink: 0
+        transition: all 1s
+        z-index: 2
+        position: relative
+
+    .move-up
+        transform: translateY(-51vh)
+
+    .move-down
+        transform: translateY(50vh)
+
+
+.trophy-wrapper
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    width: 100%
+    height: 100%
+
+    .wrapper
+        display: flex
+        align-items: center
+        flex-direction: column
+
+    .pillar
+        width: 270px
+        height: 400px
+        background-color: #bfbfbf
+        padding: 10px
+        border-radius: 10px 10px 0 0
+
+    .pillar-bar
+        width: 320px
+        height: 50px
+        border-radius: 20px 20px 0 0
+        background-color: #8c8c8c
+
+    .t1
+        margin-top: 15px
+        font-size: 45px
+        line-height: 51px
+        font-weight: 700
+        text-align: center
+        letter-spacing: 1.5px
+
+    .t2
+        margin-top: 20px
+        font-size: 22px
+        line-height: 24px
+        text-align: center
+        color: #262626
+
+    .t3
+        margin-top: 20px
+        text-align: center
+        font-size: 25px
+        white-space: nowrap
+        font-weight: 700
+        color: #ff3333
+        background-color: #e6e6e6
+        padding-top: 7px
+        padding-bottom: 7px
+        border-radius: 5px
+        border: 2px solid #8c8c8c
+        background: -webkit-linear-gradient(left, orange , yellow, green, red, blue, violet)
+        background: -o-linear-gradient(right, orange, yellow, green, red, blue, violet)
+        background: -moz-linear-gradient(right, orange, yellow, green, red, blue, violet)
+        background: linear-gradient(to right, orange , yellow, green, red, blue, violet)
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    .t4
+        text-align: center
+        margin-top: 20px
+        font-size: 15px
+        font-style: italic
+        letter-spacing: .7px
+        color: #737373
+        font-weight: 300
+
+    .t5
+        background-color: white
+        border-radius: 5px
+
+.award-wrapper
+    img
+        display: flex
+        object-fit: contain
+        width: 250px
+
+.pass-wrapper
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    z-index: 4
+    top: 0
+    left: 0
+    transition: opacity .4s
+    opacity: 1
+
+    .inner-wrapper
+        min-width: 270px
+        max-width: 300px
+        text-align: center
+        padding: 25px
+        background-color: #cccccc
+        border-radius: 10px
+        border: 1px solid #333333
+
+        .w1
+            font-size: 20px
+            font-weight: 500
+            line-height: 22px
+            color: #333333
+
+        input
+            font-size: 22px
+            border: 1px solid #333333
+            padding: 5px
+            margin-top: 10px
+            border-radius: 7px
+            text-align: center
+
+.vanish
+    opacity: 0
+    pointer-events: none

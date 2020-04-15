@@ -1,0 +1,65 @@
+.footer
+    width: 100%
+    font-family: $default-font-family
+    background-color: $color-background-base-05
+
+    &__content-wrapper
+        max-width: 60rem
+        padding: 20px 10px
+        margin: 0 auto
+
+        +media-breakpoint-up(md)
+            display: flex
+            justify-content: space-between
+
+    &__logo-wrapper
+        margin-bottom: 14px
+
+    .footer-section
+        margin-bottom: 15px
+        font-weight: 300
+        color: $color-text-base-70
+        letter-spacing: .5px
+        font-size: 15px
+
+        &__title
+            font-size: 19px
+            font-weight: 500
+            color: $color-new-base-green
+            margin-bottom: 11px
+
+            &--lavender
+                color: $color-new-base-lavender
+
+            &--peach
+                color: $color-new-peach
+
+    &__social-icon
+        display: flex
+        border-radius: 6px
+        width: 30px
+        height: 30px
+        object-fit: cover
+        margin-right: 25px
+        background-color: $color-background-base-12
+
+    &__link
+        display: flex
+        align-items: flex-end
+        color: $color-text-base-70
+        margin-bottom: 10px
+
+        &:hover
+            color: $color-new-base-lavender
+
+    &__author
+        font-size: 19px
+        letter-spacing: .5px
+        color: $color-text-base-70
+        margin-right: 15px
+        white-space: nowrap
+
+    &__powered
+        font-size: 15px
+        font-weight: 300
+        color: $color-text-base-70
