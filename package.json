@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Short b-day website",
   "main": "index.js",
-  "repository": "https://github.com/MKovvalski/filips_birthday",
+  "repository": "https://github.com/MKovvalski/filips-birthday",
   "author": "Mateusz Jakub Kowalski",
   "license": "MIT",
   "private": false,
