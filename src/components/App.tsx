@@ -62,7 +62,7 @@ const Wishes = () => {
         </div>
         <div className="pillar">
           <div className="t1">Happy birthday!</div>
-          <div className="t2">25 years of being and absolute homosexual and still going. A solid achievement</div>
+          <div className="t2">25 years of being an absolute homosexual and still going. A solid achievement</div>
           <div className="t5">
             <div className="t3">Sending all the love</div>
           </div>
