@@ -58,7 +58,7 @@ const Wishes = () => {
     <div className="trophy-wrapper">
       <div className="wrapper">
         <div className="award-wrapper">
-          <img src="../assets/award.png" alt="aaaaward"/>
+          <img src="./assets/award.png" alt="aaaaward"/>
         </div>
         <div className="pillar">
           <div className="t1">Happy birthday!</div>
